@@ -4,3 +4,6 @@ node_modules/
 **/.vs/
 *.user
 bookstore-app/dist/
+bookstore-app/.env
+bookstore-app/.env.local
+bookstore-app/.env.*.local

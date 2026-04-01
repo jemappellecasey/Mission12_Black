@@ -3,6 +3,7 @@ using BookstoreAPI.Models;
 
 namespace BookstoreAPI;
 
+// EF Core context mapped to the Books table in Bookstore.sqlite.
 public class BookstoreContext : DbContext
 {
     public BookstoreContext(DbContextOptions<BookstoreContext> options)

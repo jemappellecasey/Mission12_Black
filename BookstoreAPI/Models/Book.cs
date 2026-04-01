@@ -1,5 +1,6 @@
 namespace BookstoreAPI.Models;
 
+// Book row; BookID is the SQLite-generated primary key.
 public class Book
 {
     public int BookID { get; set; }

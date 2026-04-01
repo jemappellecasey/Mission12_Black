@@ -200,6 +200,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
   );
 }
 
+// Cart state hook (use only under <CartProvider>). Colocated with provider for clarity.
+// eslint-disable-next-line react-refresh/only-export-components
 export function useCart() {
   const ctx = useContext(CartContext);
   if (!ctx) throw new Error('useCart must be used within CartProvider');

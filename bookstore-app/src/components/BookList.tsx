@@ -1,9 +1,9 @@
+/** Public catalog: pagination, category filter, sort, cart actions. */
 import { useEffect, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import type { Book, BooksResponse } from '../types/Book';
 import { useCart } from '../contexts/CartContext';
-
-const API_BASE = 'http://localhost:5103';
+import { API_BASE } from '../config';
 
 const PAGE_SIZE_OPTIONS = [5, 10, 15, 20];
 

@@ -2,6 +2,8 @@ import { Link, Outlet } from 'react-router-dom';
 import { useCart } from '../contexts/CartContext';
 
 /**
+ * Site layout: navbar, cart offcanvas, main content outlet.
+ *
  * Bootstrap (#notcoveredinthevideos): Offcanvas — sliding panel (`offcanvas offcanvas-end`)
  * toggled by the navbar button using `data-bs-toggle="offcanvas"` and `data-bs-target="#cartOffcanvas"`.
  */
@@ -38,6 +40,11 @@ export default function Layout() {
                 >
                   Cart preview
                 </button>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/adminbooks">
+                  Admin books
+                </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/cart">

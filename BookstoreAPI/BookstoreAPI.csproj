@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.11" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="..\Bookstore.sqlite" Link="Bookstore.sqlite" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>
